@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XperienceCommunity.ApplicationInsights", "src\XperienceCommunity.ApplicationInsights\XperienceCommunity.ApplicationInsights.csproj", "{92525D3F-F6E3-40E2-9DDE-4EAFEA6C0399}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92525D3F-F6E3-40E2-9DDE-4EAFEA6C0399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92525D3F-F6E3-40E2-9DDE-4EAFEA6C0399}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92525D3F-F6E3-40E2-9DDE-4EAFEA6C0399}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92525D3F-F6E3-40E2-9DDE-4EAFEA6C0399}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB7E959B-8A6E-4721-BE2C-CA3D843A597C}
+	EndGlobalSection
+EndGlobal

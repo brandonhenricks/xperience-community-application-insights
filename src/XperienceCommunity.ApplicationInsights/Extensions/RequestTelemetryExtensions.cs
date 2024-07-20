@@ -27,7 +27,7 @@ namespace XperienceCommunity.ApplicationInsights.Extensions
             requestTelemetry.Properties.Add(nameof(WebPageDataContext.WebPage.ContentTypeID), $"{routedWebPage.ContentTypeID}");
             requestTelemetry.Properties.Add(nameof(WebPageDataContext.WebPage.WebPageItemGUID), $"{routedWebPage.WebPageItemGUID}");
             requestTelemetry.Properties.Add(nameof(WebPageDataContext.WebPage.WebPageItemID), $"{routedWebPage.WebPageItemID}");
-            requestTelemetry.Properties.Add(nameof(WebPageDataContext.WebPage.LanguageName), $"{routedWebPage.LanguageID}");
+            requestTelemetry.Properties.Add(nameof(WebPageDataContext.WebPage.LanguageID), $"{routedWebPage.LanguageID}");
             requestTelemetry.Properties.Add(nameof(WebPageDataContext.WebPage.LanguageName), $"{routedWebPage.LanguageName}");
         }
     }

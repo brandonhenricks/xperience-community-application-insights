@@ -43,6 +43,7 @@ To install **XperienceCommunity.ApplicationInsights**, follow these steps:
    public void ConfigureServices(IServiceCollection services)
    {
        services.AddApplicationInsightsTelemetry();
+       services.AddXperienceApplicationInsights();
        services.AddControllersWithViews(options =>
        {
            options.Filters.Add(typeof(XperienceApplicationInsightsFilter));

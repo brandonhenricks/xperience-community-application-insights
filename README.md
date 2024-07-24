@@ -2,8 +2,9 @@
 
 Welcome to the **XperienceCommunity.ApplicationInsights** project! This repository provides seamless integration of Microsoft Application Insights with Xperience By Kentico websites. The primary goal is to enrich Request Telemetry with detailed RoutedWebPage data and WebsiteChannel Context data, enabling deeper insights into web application performance and user interactions.
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Build Status](https://github.com/brandonhenricks/xperience-community-application-insights/actions/workflows/dotnet.yml/badge.svg)](https://github.com/brandonhenricks/xperience-community-application-insights/actions)
+
 
 ## Table of Contents
 

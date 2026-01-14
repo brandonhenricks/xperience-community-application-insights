@@ -46,7 +46,7 @@ namespace XperienceCommunity.ApplicationInsights
             {
                 telemetry.Context.GlobalProperties.TryAdd(nameof(ContactInfo.ContactID), $"{contact.ContactID}");
                 telemetry.Context.GlobalProperties.TryAdd(nameof(ContactInfo.ContactGUID), $"{contact.ContactGUID}");
-            }            
+            }
         }
     }
 }

@@ -26,7 +26,7 @@ namespace XperienceCommunity.ApplicationInsights
         /// <summary>
         /// Adds the Xperience Application Insights Filter
         /// </summary>
-        /// <param name="collection"></param>
+        /// <param name="collection">The MVC <see cref="Microsoft.AspNetCore.Mvc.Filters.FilterCollection"/> to which the Xperience Application Insights filter is added.</param>
         public static void AddXperienceApplicationInsights(this Microsoft.AspNetCore.Mvc.Filters.FilterCollection collection)
         {
             collection.Add(typeof(XperienceApplicationInsightsFilter));

@@ -28,6 +28,17 @@ Welcome to the **XperienceCommunity.ApplicationInsights** project! This reposito
 - **In-depth Analysis**: Gain deeper insights into web application performance and user interactions.
 - **Extensibility**: Extend and customize telemetry data to suit your specific needs.
 
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+## Library Version Matrix
+
+| Xperience Version | Library Version | .NET Version     |
+| ----------------- | --------------- | ---------------- |
+| >= 31.0.2         | >= 0.0.0.2      | .NET 8.0/10.0    |
+| >= 29.1.4         | 0.0.0.1         |.NET 6.0/7.0/8.0  |
+
 ## Installation
 
 To install **XperienceCommunity.ApplicationInsights**, follow these steps:

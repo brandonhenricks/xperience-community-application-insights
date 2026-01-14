@@ -51,8 +51,8 @@ public static void AddRoutedWebPageTelemetry(this RequestTelemetry? requestTelem
    ```
 
 ## Class Structure
-- Extension classes must be `static`
-- Extension classes must be `public` and `sealed` is not applicable
+- Extension classes must be `static` and `public`
+- Note: `sealed` keyword cannot be used with `static` classes
 - Group related extensions in the same file
 - Place using statements at the top, not inside namespace
 

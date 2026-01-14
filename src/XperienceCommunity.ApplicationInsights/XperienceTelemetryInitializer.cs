@@ -29,22 +29,24 @@ namespace XperienceCommunity.ApplicationInsights
                 return;
             }
 
-            if (telemetry is RequestTelemetry _)
+            if (telemetry is not RequestTelemetry)
             {
-                telemetry.Context.GlobalProperties.Add(nameof(IWebsiteChannelContext.WebsiteChannelName),
-                    _websiteChannelContext.WebsiteChannelName);
-                telemetry.Context.GlobalProperties.Add(nameof(IWebsiteChannelContext.WebsiteChannelID),
-                    $"{_websiteChannelContext.WebsiteChannelID}");
-                telemetry.Context.GlobalProperties.Add("WebFarmServerName", _webFarmService.ServerName);
-
-                var contact = _contactProvider.GetCurrentContact();
-
-                if (contact != null)
-                {
-                    telemetry.Context.GlobalProperties.Add(nameof(ContactInfo.ContactID), $"{contact.ContactID}");
-                    telemetry.Context.GlobalProperties.Add(nameof(ContactInfo.ContactGUID), $"{contact.ContactGUID}");
-                }
+                return;
             }
+
+            telemetry.Context.GlobalProperties.TryAdd(nameof(IWebsiteChannelContext.WebsiteChannelName),
+                _websiteChannelContext.WebsiteChannelName);
+            telemetry.Context.GlobalProperties.TryAdd(nameof(IWebsiteChannelContext.WebsiteChannelID),
+                $"{_websiteChannelContext.WebsiteChannelID}");
+            telemetry.Context.GlobalProperties.TryAdd("WebFarmServerName", _webFarmService.ServerName);
+
+            var contact = _contactProvider.GetCurrentContact();
+
+            if (contact is not null)
+            {
+                telemetry.Context.GlobalProperties.TryAdd(nameof(ContactInfo.ContactID), $"{contact.ContactID}");
+                telemetry.Context.GlobalProperties.TryAdd(nameof(ContactInfo.ContactGUID), $"{contact.ContactGUID}");
+            }            
         }
     }
 }
